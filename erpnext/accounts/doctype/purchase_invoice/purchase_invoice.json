@@ -104,6 +104,8 @@
   "base_rounded_total",
   "base_in_words",
   "column_break8",
+  "services_customs",
+  "customs_services",
   "grand_total",
   "rounding_adjustment",
   "rounded_total",
@@ -1147,7 +1149,6 @@
    "fieldname": "language",
    "fieldtype": "Data",
    "label": "Print Language",
-   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -1210,8 +1211,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "\nDraft\nReturn\nDebit Note Issued\nSubmitted\nPaid\nUnpaid\nOverdue\nCancelled",
-   "print_hide": 1
+   "options": "\nDraft\nReturn\nDebit Note Issued\nSubmitted\nPaid\nUnpaid\nOverdue\nCancelled"
   },
   {
    "fieldname": "inter_company_invoice_reference",
@@ -1282,12 +1282,23 @@
   {
    "fieldname": "dimension_col_break",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "services_customs",
+   "fieldtype": "Section Break",
+   "label": "Services Customs"
+  },
+  {
+   "fieldname": "customs_services",
+   "fieldtype": "Table",
+   "label": "CUSTOMS SERVICES",
+   "options": "CUSTOMS SERVICES"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 204,
  "is_submittable": 1,
- "modified": "2019-09-17 22:31:42.666601",
+ "modified": "2019-09-29 16:09:13.244749",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Purchase Invoice",
