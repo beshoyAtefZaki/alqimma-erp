@@ -39,7 +39,7 @@ class Employeecontract(Document):
 def validate_contract_date(employee , start_date):
 	date = datetime.datetime.strptime(start_date, "%Y-%m-%d")
 	# date = datetime.date.today()
-	grant_date    = datetime.datetime.today() + relativedelta(months =+ 2)
+	grant_date    = datetime.datetime.today() - relativedelta(months =+ 2)
 	if date < grant_date :
 		frappe.msgprint("Unvalid Contract date !")
 		return False
